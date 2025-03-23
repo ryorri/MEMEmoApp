@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA94ED-AA09-419A-AF33-61861773D82B}|MEMEmoAppBackend.Presentation\\MEMEmoAppBackend.Presentation.csproj|g:\\studia\\semestr vi\\programowanie aplikacji mobilnych\\lab\\projekt\\mememoapp\\mememoappbackend\\mememoappbackend.presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA94ED-AA09-419A-AF33-61861773D82B}|MEMEmoAppBackend.Presentation\\MEMEmoAppBackend.Presentation.csproj|solutionrelative:mememoappbackend.presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E274E21F-ED0B-42BF-B3FB-F66C9CA003A2}|MEMEmoAppBackend.Application\\MEMEmoAppBackend.Application.csproj|g:\\studia\\semestr vi\\programowanie aplikacji mobilnych\\lab\\projekt\\mememoapp\\mememoappbackend\\mememoappbackend.application\\objects\\user\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E274E21F-ED0B-42BF-B3FB-F66C9CA003A2}|MEMEmoAppBackend.Application\\MEMEmoAppBackend.Application.csproj|solutionrelative:mememoappbackend.application\\objects\\user\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA94ED-AA09-419A-AF33-61861773D82B}|MEMEmoAppBackend.Presentation\\MEMEmoAppBackend.Presentation.csproj|g:\\studia\\semestr vi\\programowanie aplikacji mobilnych\\lab\\projekt\\mememoapp\\mememoappbackend\\mememoappbackend.presentation\\controllers\\utilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA94ED-AA09-419A-AF33-61861773D82B}|MEMEmoAppBackend.Presentation\\MEMEmoAppBackend.Presentation.csproj|solutionrelative:mememoappbackend.presentation\\controllers\\utilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5409930E-CBB6-46A5-BEF1-B4642E9C6BEB}|MEMEmoAppBackend.Infrastructure\\MEMEmoAppBackend.Infrastructure.csproj|g:\\studia\\semestr vi\\programowanie aplikacji mobilnych\\lab\\projekt\\mememoapp\\mememoappbackend\\mememoappbackend.infrastructure\\servicers\\utilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5409930E-CBB6-46A5-BEF1-B4642E9C6BEB}|MEMEmoAppBackend.Infrastructure\\MEMEmoAppBackend.Infrastructure.csproj|solutionrelative:mememoappbackend.infrastructure\\servicers\\utilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91EA94ED-AA09-419A-AF33-61861773D82B}|MEMEmoAppBackend.Presentation\\MEMEmoAppBackend.Presentation.csproj|g:\\studia\\semestr vi\\programowanie aplikacji mobilnych\\lab\\projekt\\mememoapp\\mememoappbackend\\mememoappbackend.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91EA94ED-AA09-419A-AF33-61861773D82B}|MEMEmoAppBackend.Presentation\\MEMEmoAppBackend.Presentation.csproj|solutionrelative:mememoappbackend.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5409930E-CBB6-46A5-BEF1-B4642E9C6BEB}|MEMEmoAppBackend.Infrastructure\\MEMEmoAppBackend.Infrastructure.csproj|g:\\studia\\semestr vi\\programowanie aplikacji mobilnych\\lab\\projekt\\mememoapp\\mememoappbackend\\mememoappbackend.infrastructure\\infrastructureinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5409930E-CBB6-46A5-BEF1-B4642E9C6BEB}|MEMEmoAppBackend.Infrastructure\\MEMEmoAppBackend.Infrastructure.csproj|solutionrelative:mememoappbackend.infrastructure\\infrastructureinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InfrastructureInjection.cs",
+              "DocumentMoniker": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Infrastructure\\InfrastructureInjection.cs",
+              "RelativeDocumentMoniker": "MEMEmoAppBackend.Infrastructure\\InfrastructureInjection.cs",
+              "ToolTip": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Infrastructure\\InfrastructureInjection.cs",
+              "RelativeToolTip": "MEMEmoAppBackend.Infrastructure\\InfrastructureInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:15:17.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UtilityService.cs",
+              "DocumentMoniker": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Infrastructure\\Servicers\\UtilityService.cs",
+              "RelativeDocumentMoniker": "MEMEmoAppBackend.Infrastructure\\Servicers\\UtilityService.cs",
+              "ToolTip": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Infrastructure\\Servicers\\UtilityService.cs",
+              "RelativeToolTip": "MEMEmoAppBackend.Infrastructure\\Servicers\\UtilityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:11:48.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "MEMEmoAppBackend.Presentation\\Program.cs",
+              "ToolTip": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Presentation\\Program.cs",
+              "RelativeToolTip": "MEMEmoAppBackend.Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T11:23:37.625Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterUserDto.cs",
+              "DocumentMoniker": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Application\\Objects\\User\\RegisterUserDto.cs",
+              "RelativeDocumentMoniker": "MEMEmoAppBackend.Application\\Objects\\User\\RegisterUserDto.cs",
+              "ToolTip": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Application\\Objects\\User\\RegisterUserDto.cs",
+              "RelativeToolTip": "MEMEmoAppBackend.Application\\Objects\\User\\RegisterUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:04:37.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UtilityController.cs",
+              "DocumentMoniker": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Presentation\\Controllers\\UtilityController.cs",
+              "RelativeDocumentMoniker": "MEMEmoAppBackend.Presentation\\Controllers\\UtilityController.cs",
+              "ToolTip": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Presentation\\Controllers\\UtilityController.cs",
+              "RelativeToolTip": "MEMEmoAppBackend.Presentation\\Controllers\\UtilityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:18:33.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Presentation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MEMEmoAppBackend.Presentation\\Controllers\\UserController.cs",
+              "ToolTip": "G:\\Studia\\Semestr VI\\Programowanie aplikacji mobilnych\\Lab\\Projekt\\MEMEmoApp\\MEMEmoAppBackend\\MEMEmoAppBackend.Presentation\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MEMEmoAppBackend.Presentation\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T11:24:54.984Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
