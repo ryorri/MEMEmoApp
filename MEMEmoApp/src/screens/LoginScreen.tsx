@@ -21,14 +21,14 @@ type Props = {
 const LoginScreen: React.FC<Props> = () => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
-  const [loginMessage, setLoginMessage] = useState(""); // Nowy stan dla komunikatu
+  const [loginMessage, setLoginMessage] = useState("");
 
   const handleLogin = async () => {
     const dto = new LoginUserDto();
     dto.init({ userName: login, password: password });
 
     try {
-      await Backend.login(dto); // Jeśli nie zwraca wartości, po prostu czekamy na zakończenie operacji
+      await Backend.login(dto);
     } catch (error) {
       setLoginMessage("Please, check login or password!\n" + error);
     }

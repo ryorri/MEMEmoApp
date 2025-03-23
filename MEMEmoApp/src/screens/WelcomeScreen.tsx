@@ -78,26 +78,26 @@ const styles = StyleSheet.create({
     height: 300,
     marginTop: 20,
     marginBottom: 40,
-    borderRadius: 100, // Zaokrąglone rogi (zakładając, że obrazek jest kwadratowy)
-    borderWidth: 5, // Grubość ramki
-    borderColor: "white", // Kolor ramki
-    overflow: "hidden", // Ukrywa wszystko, co wychodzi poza obszar zaokrąglonego obrazu
+    borderRadius: 100,
+    borderWidth: 5,
+    borderColor: "white",
+    overflow: "hidden",
   },
   button: {
-    backgroundColor: "#4CAF50", // Kolor tła przycisku
-    paddingVertical: 12, // Odstęp pionowy wewnątrz przycisku
-    paddingHorizontal: 30, // Odstęp poziomy wewnątrz przycisku
-    borderRadius: 5, // Zaokrąglone rogi
+    backgroundColor: "#4CAF50",
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    borderRadius: 5,
     width: 150,
     height: 50,
     alignItems: "center",
     margin: 10,
   },
   textInButton: {
-    color: "white", // Kolor tekstu
-    fontSize: 18, // Rozmiar czcionki
-    textAlign: "center", // Wyśrodkowanie tekstu
-    fontWeight: "bold", // Pogrubienie tekstu
+    color: "white",
+    fontSize: 18,
+    textAlign: "center",
+    fontWeight: "bold",
   },
   text: {
     fontSize: 20,
