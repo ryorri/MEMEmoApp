@@ -13,8 +13,9 @@ namespace MEMEmoAppBackend.Application.Services.Interfaces
     {
         Task<bool> Create(RegisterUserDto user);
 
-        Task<bool> LogIn(LoginUserDto user);
+        Task<UserDTO> LogIn(LoginUserDto user);
 
         Task<List<User>> GetUsers();
+        Task<UserDTO> GetUserById(string id);
     }
 }

@@ -10,5 +10,6 @@ namespace MEMEmoAppBackend.Domain.Entities
 {
     public class User : IdentityUser, IUser
     {
+        public ICollection<Sessions> Sessions { get; set; }
     }
 }

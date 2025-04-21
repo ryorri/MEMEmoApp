@@ -16,10 +16,21 @@ namespace MEMEmoAppBackend.Presentation.Controllers
         }
 
         [HttpGet("users")]
+        [ProducesResponseType(typeof(List<UserDTO>), 200)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> GetUsers()
         {
             var users = await _userService.GetUsers();
             return Ok(users);
+        }
+
+        [HttpGet("user")]
+        [ProducesResponseType(typeof(UserDTO), 200)]
+        [ProducesResponseType(400)]
+        public async Task<IActionResult> GetUser(string id)
+        {
+            var user = await _userService.GetUserById(id);
+            return Ok(user);
         }
 
         [HttpPost("register")]
@@ -40,6 +51,8 @@ namespace MEMEmoAppBackend.Presentation.Controllers
         }
 
         [HttpPost("login")]
+        [ProducesResponseType(typeof(UserDTO), 200)]  
+        [ProducesResponseType(401)]  
         public async Task<IActionResult> LogIn(LoginUserDto user)
         {
             if (user == null)
@@ -49,18 +62,12 @@ namespace MEMEmoAppBackend.Presentation.Controllers
 
             var result = await _userService.LogIn(user);
 
-            if (!result)
+            if (result == null)
             {
                 return Unauthorized("Wrong data");
             }
 
-            var response = new
-            {
-                message = "User logged in successfully.",
-                user = user
-            };
-
-            return Ok(response);
+            return Ok(result);
         }
     }
 }

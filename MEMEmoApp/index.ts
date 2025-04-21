@@ -6,7 +6,8 @@ import App from "./App";
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
 // the environment is set up appropriately
-const backend = new Client("http://192.168.0.171:5039");
+const backend = new Client("http://192.168.0.171:5039"); //dom
+//const backend = new Client("http://10.200.1.96:5039"); //uczelnia
 registerRootComponent(App);
 
 export { backend as Backend };

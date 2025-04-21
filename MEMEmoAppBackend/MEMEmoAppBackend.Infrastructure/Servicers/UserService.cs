@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using AutoMapper;
 using MEMEmoAppBackend.Application.Objects.User;
 using MEMEmoAppBackend.Application.Services.Interfaces;
 using MEMEmoAppBackend.Domain.Entities;
@@ -16,12 +17,14 @@ namespace MEMEmoAppBackend.Infrastructure.Services
         private readonly MEMEmoAppDbContext _dbContext;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly IMapper _mapper;
 
-        public UserService(MEMEmoAppDbContext dbContext, UserManager<User> userManager, SignInManager<User> signInManager, ILogger<UserService> logger)
+        public UserService(MEMEmoAppDbContext dbContext, UserManager<User> userManager, SignInManager<User> signInManager, ILogger<UserService> logger,IMapper mapper)
         {
             _dbContext = dbContext;
             _userManager = userManager;
             _signInManager = signInManager;
+            _mapper = mapper;
         }
 
         public async Task<bool> Create(RegisterUserDto user)
@@ -37,26 +40,44 @@ namespace MEMEmoAppBackend.Infrastructure.Services
             return result.Succeeded;
         }
 
-        public async Task<bool> LogIn(LoginUserDto user)
+        public async Task<UserDTO> LogIn(LoginUserDto user)
         {
             var login = await _userManager.FindByNameAsync(user.UserName);
             if (login == null)
             {
-                return false;
+                return null;
             }
 
-            var result = await _signInManager.PasswordSignInAsync(login, user.Password, false, false);
+            var tryLogin = await _signInManager.PasswordSignInAsync(login, user.Password, false, false);
             
-            if (!result.Succeeded)
+            if (tryLogin.Succeeded)
             {
-                return false;
+                var userDto = _mapper.Map<UserDTO>(login);
+                return userDto;
             }
-            return result.Succeeded;
+            else
+            {
+                return null;
+            }
         }
 
         public async Task<List<User>> GetUsers()    
         {
             return await _userManager.Users.ToListAsync();
+        }
+        public async Task<UserDTO> GetUserById(string id)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == id);
+
+
+            if (user != null)
+            {
+                var dto = _mapper.Map<UserDTO>(user);
+                return dto;
+            }
+            else
+                return null;
+                
         }
     }
 }

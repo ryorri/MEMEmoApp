@@ -1,42 +1,56 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  Image,
+  TouchableOpacity,
+  Alert,
+} from "react-native";
 import { Backend } from "../..";
 import { LoginUserDto } from "../utilities/backendLibrary/MEMEmoAppBackend";
 import { StackNavigationProp } from "@react-navigation/stack";
+import styles from "../components/styles";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 type RootStackParamList = {
-  Login: undefined;
-  Register: undefined;
+  Dashboard: undefined;
 };
 
-type WelcomeScreenNavigationProp = StackNavigationProp<
-  RootStackParamList,
-  "Login"
->;
+type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList>;
 
 type Props = {
-  navigation: WelcomeScreenNavigationProp;
+  navigation: LoginScreenNavigationProp;
 };
 
-const LoginScreen: React.FC<Props> = () => {
+const LoginScreen: React.FC<Props> = ({ navigation }) => {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [loginMessage, setLoginMessage] = useState("");
 
-  const handleLogin = async () => {
+  const handleLogin = async (nav: LoginScreenNavigationProp) => {
     const dto = new LoginUserDto();
     dto.init({ userName: login, password: password });
 
     try {
-      await Backend.login(dto);
+      const response = await Backend.login(dto);
+
+      if (response != null) {
+        await AsyncStorage.setItem("user", JSON.stringify(response));
+        nav.navigate("Dashboard");
+      }
     } catch (error) {
-      setLoginMessage("Please, check login or password!\n" + error);
+      setLoginMessage("Please, check login or password!\n");
     }
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Log in</Text>
+      <Image
+        source={require("../../assets/login_logo.png")}
+        style={styles.image}
+      />
+      <Text style={styles.title}>Hi again!</Text>
       <TextInput
         style={styles.input}
         placeholder="Login"
@@ -50,35 +64,17 @@ const LoginScreen: React.FC<Props> = () => {
         value={password}
         onChangeText={setPassword}
       />
-      <Button title="Log in" onPress={handleLogin} />
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleLogin(navigation)}
+      >
+        <Text style={styles.textInButton}>Log in</Text>
+      </TouchableOpacity>
+
       {loginMessage ? <Text style={styles.message}>{loginMessage}</Text> : null}
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-  },
-  input: {
-    width: "100%",
-    padding: 10,
-    marginBottom: 15,
-    borderWidth: 1,
-    borderRadius: 5,
-  },
-  message: {
-    marginTop: 15,
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-});
 
 export default LoginScreen;

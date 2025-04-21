@@ -1,20 +1,32 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import { Backend } from "../..";
 import { RegisterUserDto } from "../utilities/backendLibrary/MEMEmoAppBackend";
+import styles from "../components/styles";
+import { StackNavigationProp } from "@react-navigation/stack";
 
-const RegisterScreen = () => {
+type RootStackParamList = {
+  Welcome: undefined;
+};
+
+type RegisterScreenNavigationProp = StackNavigationProp<RootStackParamList>;
+
+type Props = {
+  navigation: RegisterScreenNavigationProp;
+};
+
+const RegisterScreen: React.FC<Props> = ({ navigation }) => {
   const [login, setLogin] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [registerMessage, setRegisterMessage] = useState("");
 
-  const handleRegister = async () => {
+  const handleRegister = async (nav: RegisterScreenNavigationProp) => {
     try {
       const dto = new RegisterUserDto();
       dto.init({ userName: login, email: email, password: password });
-      await Backend.register(dto);
-      setRegisterMessage("You are one of us!");
+      await Backend.register2(dto);
+      nav.navigate("Welcome");
     } catch (error) {
       setRegisterMessage("Something goes wrong \n" + error);
     }
@@ -22,6 +34,10 @@ const RegisterScreen = () => {
 
   return (
     <View style={styles.container}>
+      <Image
+        source={require("../../assets/register_logo.png")}
+        style={styles.image}
+      />
       <Text style={styles.title}>Play with us!</Text>
       <TextInput
         style={styles.input}
@@ -42,37 +58,19 @@ const RegisterScreen = () => {
         value={password}
         onChangeText={setPassword}
       />
-      <Button title="Sign up" onPress={handleRegister} />
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleRegister(navigation)}
+      >
+        <Text style={styles.textInButton}>Sign up</Text>
+      </TouchableOpacity>
+
       {registerMessage ? (
         <Text style={styles.message}>{registerMessage}</Text>
       ) : null}
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-  },
-  input: {
-    width: "100%",
-    padding: 10,
-    marginBottom: 15,
-    borderWidth: 1,
-    borderRadius: 5,
-  },
-  message: {
-    marginTop: 15,
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-});
 
 export default RegisterScreen;

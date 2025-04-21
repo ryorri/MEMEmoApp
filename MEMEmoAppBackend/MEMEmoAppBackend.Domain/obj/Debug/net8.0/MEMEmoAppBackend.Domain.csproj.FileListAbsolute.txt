@@ -12,3 +12,4 @@ G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEM
 G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Domain\obj\Debug\net8.0\MEMEmoAppBackend.Domain.pdb
 G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Domain\obj\Debug\net8.0\MEMEmoAppBackend.Domain.genruntimeconfig.cache
 G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Domain\obj\Debug\net8.0\ref\MEMEmoAppBackend.Domain.dll
+G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Domain\obj\Debug\net8.0\MEMEmoAppBackend.Domain.sourcelink.json

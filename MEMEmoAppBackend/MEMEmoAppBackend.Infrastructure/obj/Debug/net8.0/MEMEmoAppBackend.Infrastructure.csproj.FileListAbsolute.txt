@@ -17,3 +17,4 @@ G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEM
 G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Infrastructure\obj\Debug\net8.0\MEMEmoAppBackend.Infrastructure.pdb
 G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Infrastructure\obj\Debug\net8.0\MEMEmoAppBackend.Infrastructure.genruntimeconfig.cache
 G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Infrastructure\obj\Debug\net8.0\ref\MEMEmoAppBackend.Infrastructure.dll
+G:\Studia\Semestr VI\Programowanie aplikacji mobilnych\Lab\Projekt\MEMEmoApp\MEMEmoAppBackend\MEMEmoAppBackend.Infrastructure\obj\Debug\net8.0\MEMEmoAppBackend.Infrastructure.sourcelink.json

@@ -1,6 +1,7 @@
 ﻿using MEMEmoAppBackend.Application.Services.Interfaces;
 using MEMEmoAppBackend.Domain.Entities;
 using MEMEmoAppBackend.Infrastructure.Data;
+using MEMEmoAppBackend.Infrastructure.Servicers;
 using MEMEmoAppBackend.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +30,7 @@ namespace MEMEmoAppBackend.Infrastructure
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUtilityService, UtilityService>();
+            services.AddScoped<ISessionsService, SessionsService>();
             #endregion
 
         }

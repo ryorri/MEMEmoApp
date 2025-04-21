@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MEMEmoAppBackend.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0be7a83d43db7fbdb0eb1eec89b297e06b3a88d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MEMEmoAppBackend.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MEMEmoAppBackend.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
